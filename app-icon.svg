@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">RyBot</title>
+  <desc id="desc">A cream house with a chimney and a smiling face on a terracotta tile: the RyBot Hearth mark.</desc>
+
+  <defs>
+    <clipPath id="tile"><rect width="1024" height="1024" rx="224" /></clipPath>
+    <linearGradient id="clay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C45C37" />
+      <stop offset="1" stop-color="#A9472A" />
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#tile)">
+    <rect width="1024" height="1024" fill="url(#clay)" />
+    <g transform="translate(112 106) scale(20)">
+        <!-- The house, cream on clay. A thin round-joined stroke in the same cream
+             softens the ridge and eaves without changing the silhouette. -->
+        <g fill="#FFF4E8" stroke="#FFF4E8" stroke-width="1.1" stroke-linejoin="round">
+          <rect x="27" y="7" width="4" height="8" rx="1.5" />
+          <path d="M20 5 L35 17 V33 a3 3 0 0 1 -3 3 H8 a3 3 0 0 1 -3 -3 V17 Z" />
+        </g>
+        <!-- The face, in the ink colour. -->
+        <g fill="#2B211C">
+          <circle cx="15" cy="23" r="2.4" />
+          <circle cx="25" cy="23" r="2.4" />
+        </g>
+        <path d="M15 29 q5 4 10 0" fill="none" stroke="#2B211C" stroke-width="2.2" stroke-linecap="round" />
+      </g>
+  </g>
+</svg>
