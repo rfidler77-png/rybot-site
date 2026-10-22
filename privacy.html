@@ -15,35 +15,55 @@
   p, li { color: var(--ink); }
   .meta { color: var(--soft); font-size: 15px; }
   a { color: var(--accent); }
+  li { margin: 6px 0; }
   .card { background: var(--raised); border-radius: 20px; padding: 4px 24px 12px; margin-top: 24px; }
+  footer { margin-top: 32px; color: var(--soft); font-size: 15px; text-align: center; }
 </style>
 </head>
 <body>
 <main>
   <img src="app-icon.svg" width="56" height="56" alt="">
   <h1>RyBot privacy policy</h1>
-  <p class="meta">Last updated October 21, 2026 · <a href="terms.html">Terms</a> · <a href="support.html">Support</a></p>
+  <p class="meta">Last updated October 21, 2026 · <a href="terms.html">Terms</a></p>
 
   <div class="card">
     <h2>What RyBot is</h2>
-    <p>RyBot is a private assistant run by the Fidler family on a computer in our home. It is not a public service: only family members invited by the owner can sign in.</p>
+    <p>RyBot is a private assistant run by the Fidler family on a computer in our home. It is not a public service: only family members invited by the owner can sign in. The RyBot Family app connects to that home computer (the family's RyBot server); it has no accounts or servers of its own.</p>
 
     <h2>What data it uses</h2>
-    <p>When a family member connects a Google account, RyBot can read and act on that person's Gmail, Google Calendar and Google Drive, only to do what that person (or a parent, for a child's helpers) asks. Each person connects their own account and can disconnect it at any time.</p>
+    <ul>
+      <li><strong>What you send a helper:</strong> your messages, and any photos, files, voice recordings or dictation you add to them.</li>
+      <li><strong>Your sign-in:</strong> your email address (for family members invited by email), the name of each device you pair, and a notification token so your phone can get alerts.</li>
+      <li><strong>Connected Google accounts (optional):</strong> when a family member connects a Google account, RyBot can read and act on that person's Gmail, Google Calendar and Google Drive, only to do what that person (or a parent, for a child's helpers) asks. Each person connects their own account and can disconnect it at any time.</li>
+      <li><strong>Reports:</strong> if you report a helper's reply, the reply, your reason and who reported it are kept for the parents.</li>
+    </ul>
+
+    <h2>AI services that process your data</h2>
+    <p>RyBot's helpers use AI to reply. To answer you, the family's RyBot server sends what you send a helper (messages, photos, files and voice), together with the earlier messages in that conversation and the helper's instructions, to the AI service that helper uses, and receives its reply:</p>
+    <ul>
+      <li><strong>Anthropic (Claude)</strong> is the AI service RyBot's helpers use by default. Anthropic processes this data to create the response, under its <a href="https://www.anthropic.com/legal/commercial-terms">commercial terms</a> and <a href="https://www.anthropic.com/legal/privacy">privacy policy</a>.</li>
+      <li><strong>Other AI services the family chooses:</strong> the family's server owner chooses which AI service each helper uses. A helper can instead use a model running on the family's own computer (which sends nothing outside the home) or another provider's model, which then receives the same kinds of data under that provider's terms.</li>
+      <li><strong>OpenAI, for Live calls:</strong> if you start a Live voice call with a helper, your voice and the call's conversation are sent to OpenAI's realtime voice service to hear and speak; the app tells you before your first call.</li>
+    </ul>
+    <p>The app asks for your agreement before your first message is sent to a helper, and you can read this again in the app under Settings → About → AI and your data. Google data is sent to an AI service only when you ask a helper to use it (for example, "summarize my unread email"), and then only what that request needs.</p>
 
     <h2>Where it is kept</h2>
-    <p>Messages, connected-account tokens and files stay on the family's own computer at home. Tokens are stored encrypted. Nothing is sold, shared with advertisers, or used to train AI models by RyBot.</p>
-    <p>To answer a request, RyBot may send the relevant text to the AI model the family has chosen for that helper, which may be a model running at home or an AI provider such as Anthropic. Google user data is used only to provide the feature the person asked for.</p>
+    <p>Messages, connected-account tokens and files stay on the family's own computer at home. Tokens are stored encrypted. Nothing is sold, shared with advertisers, or used to train AI models by RyBot. Apart from the AI service a helper uses, Google (for connected accounts) and Apple (to deliver notifications), nothing is sent to anyone else.</p>
 
     <h2>Google user data</h2>
-    <p>RyBot's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <p>RyBot's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is used only to provide the feature the person asked for, is not used to train AI models, and reaches an AI service only as described above.</p>
 
-    <h2>Removing your data</h2>
-    <p>Disconnect your Google account in RyBot under your profile, or at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Ask the owner to delete your RyBot account and its history.</p>
+    <h2>Children</h2>
+    <p>Kids can use RyBot only after a parent invites them. Parents can see the family's helpers and conversations, choose which AI service each helper uses, receive reports of helper replies, and remove a child's account.</p>
+
+    <h2>Deleting your account and data</h2>
+    <p>In the app, go to Settings → Delete my account. This signs out every device signed in as you and removes their notification tokens, disconnects your Google accounts (revoking RyBot's access at Google), removes you from the family's sign-in list, deletes the helpers only you could see with all their conversations, deletes the conversations only you wrote in, and replaces each of your messages in shared family conversations with "Message removed". Reports you made stay for the parents without your name. The owner runs RyBot on their own computer, so they remove their data by removing RyBot from that computer.</p>
+    <p>You can also disconnect your Google account in RyBot under your profile, or at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
 
     <h2>Contact</h2>
-    <p>Ryan Fidler · <a href="mailto:rfidler77@gmail.com">rfidler77@gmail.com</a></p>
+    <p>Ryan Fidler · <a href="mailto:rfidler77@gmail.com">rfidler77@gmail.com</a> · <a href="support.html">Support</a></p>
   </div>
+  <footer><a href="terms.html">Terms</a> · <a href="support.html">Support</a></footer>
 </main>
 </body>
 </html>
